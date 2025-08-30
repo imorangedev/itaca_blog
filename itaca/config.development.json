@@ -7,7 +7,7 @@
   "database": {
     "client": "sqlite3",
     "connection": {
-      "filename": "/mnt/c/Users/Orange/projects/itaca_blog/itaca/content/data/ghost-local.db"
+      "filename": "/home/diego-naranjo/Desktop/projects/itaca_blog/itaca/content/data/ghost-local.db"
     }
   },
   "mail": {
@@ -24,6 +24,6 @@
     "staffDeviceVerification": false
   },
   "paths": {
-    "contentPath": "/mnt/c/Users/Orange/projects/itaca_blog/itaca/content"
+    "contentPath": "/home/diego-naranjo/Desktop/projects/itaca_blog/itaca/content"
   }
 }
