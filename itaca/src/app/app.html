@@ -16,7 +16,7 @@
     ☰
   </button>
   <ul class="nav-links" [class.open]="isMenuOpen()">
-    <li><a [routerLink]="['/']" (click)="toggleMenu()">Home</a></li>
+    <li><a [routerLink]="['/']" (click)="toggleMenu()" class="home-link">Home</a></li>
     <li><a [routerLink]="['about']" (click)="toggleMenu()">About</a></li>
     <li><a [routerLink]="['/portfolio']" (click)="toggleMenu()">Portfolio</a></li>
     <li><a [routerLink]="['/blog']" (click)="toggleMenu()">Blog</a></li>

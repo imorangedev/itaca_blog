@@ -3,5 +3,80 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 300px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* About Row */
+.about-row {
+  width: 100%;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-row h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: white;
+}
+
+/* Row Content Layout */
+.row-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Text Section - Default (more space for text) */
+.text-section {
+  flex: 1.5;
+}
+
+.text-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: white;
+}
+
+/* Image Section */
+.image-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.image-section img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Split layout for second row - balanced sizes */
+.split-content .text-section {
+  flex: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .row-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .text-section {
+    flex: 1;
+  }
+
+  .image-section img {
+    width: 280px;
+    height: 280px;
+  }
+
+  .about-row h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
 }
