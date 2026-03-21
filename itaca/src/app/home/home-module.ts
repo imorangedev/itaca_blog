@@ -1,12 +1,18 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
-
-
-@NgModule({
-  declarations: [],
-  imports: [
-    CommonModule
-  ]
+@Component({
+  selector: 'app-home',
+  templateUrl: './home.html',
+  styleUrls: ['./home.css'],
+  standalone: true,
+  imports: [FormsModule],
 })
-export class HomeModule { }
+export class HomeComponent {
+  email = '';
+
+  saveEmail(): void {
+    // TODO: implement HTTP request to save subscriber email
+    // Example: this.http.post('/api/subscribe', { email: this.email })
+  }
+}
