@@ -1,3 +1,37 @@
 <div class="container-contact">
-    <h1>Contact Section</h1>
+
+  <section class="contact-header">
+    <h1 class="contact-title">Get in touch</h1>
+    <p class="contact-subtitle">
+      Have a question, a project idea, or just want to say hello? Drop your email and we'll reach out to you.
+      No spam, ever — just real conversations.
+    </p>
+  </section>
+
+  <hr class="section-divider" />
+
+  <section class="contact-form-section">
+    <form class="contact-form" (ngSubmit)="saveEmail()" #emailForm="ngForm">
+      <div class="form-row">
+        <label for="contact-email" class="form-label">Your email address</label>
+        <div class="form-group">
+          <input
+            id="contact-email"
+            type="email"
+            name="email"
+            [(ngModel)]="email"
+            required
+            placeholder="your@email.com"
+            class="email-input"
+            autocomplete="email"
+          />
+          <button type="submit" class="cta-button" [disabled]="emailForm.invalid">
+            Send message
+          </button>
+        </div>
+        <p class="form-note">By submitting you agree to receive occasional updates from Itaca Lab.</p>
+      </div>
+    </form>
+  </section>
+
 </div>
