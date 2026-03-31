@@ -1,12 +1,19 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, signal } from '@angular/core';
+import blogData from '../../assets/content/blog.json';
 
+interface Post {
+  post_id: number;
+  title: string;
+  content: string;
+  url: string;
+}
 
-
-@NgModule({
-  declarations: [],
-  imports: [
-    CommonModule
-  ]
+@Component({
+  selector: 'app-blog',
+  templateUrl: './blog.html',
+  styleUrls: ['./blog.css'],
+  standalone: true,
 })
-export class BlogModule { }
+export class BlogComponent {
+  posts = signal<Post[]>(blogData.post);
+}
