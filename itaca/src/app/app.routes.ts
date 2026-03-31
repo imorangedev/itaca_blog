@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home-module';
 import { AboutComponent } from './about/about';
-import { PortfolioComponent } from './portfolio/portfolio';
+import { PortfolioComponent } from './portfolio/portfolio-module';
 import { BlogComponent } from './blog/blog-module';
 import { ContactComponent } from './contact/contact-module';
 
