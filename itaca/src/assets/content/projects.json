@@ -1,0 +1,40 @@
+{
+    "projects": [
+        {
+            "project_id": 1,
+            "title": "ERP System Architecture",
+            "content": "Complete project to improve inventory and logistics of a big food distributor.",
+            "url": "https://github.com/diegonaranjo94/proyecto_final_miso_arquitectura"
+        },
+        {
+            "project_id": 2,
+            "title": "ERP Backend",
+            "content": "Flask backend for the ERP system, with a REST API and a microservices architecture.",
+            "url": "https://github.com/diegonaranjo94/proyecto_final_miso_backend"
+        },
+        {
+            "project_id": 3,
+            "title": "ERP Frontend",
+            "content": "Front end with Next.js and React, with a clean and responsive design, and a user-friendly interface.",
+            "url": "https://github.com/diegonaranjo94/proyecto_final_miso_frontend"
+        },
+        {
+            "project_id": 4,
+            "title": "#DS4A Data Science Project",
+            "content": "Bogota Archive data governance project.",
+            "url": "https://frequent-parsley-cd1.notion.site/Projects-2fbb7f35f40681419918e5ec1f45e4c5?p=2fbb7f35f40681968019e898386a0877&pm=c"
+        },
+        {
+            "project_id": 5,
+            "title": "World Cusines Information",
+            "content": "Manage different recipes and understand how they are related to the world.",
+            "url": "https://github.com/diegonaranjo94/world_cuisines_api_nest"
+        },
+        {
+            "project_id": 6,
+            "title": "Music Collectors Mobile App",
+            "content": "Manage albums and your music collection in Android phones.",
+            "url": "https://github.com/diegonaranjo94/proyecto_misw4203_apps_movil"
+        }
+    ]
+}

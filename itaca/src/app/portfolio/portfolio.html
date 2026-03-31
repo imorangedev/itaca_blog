@@ -1,3 +1,16 @@
 <div class="container-portfolio">
-    <h1>Portfolio Section</h1>
+
+  <h1 class="portfolio-title">Portfolio</h1>
+  <p class="portfolio-subtitle">A selection of projects built across data, backend, and frontend engineering.</p>
+
+  <div class="projects-grid">
+    @for (project of projects(); track project.project_id) {
+      <a class="project-card" [href]="project.url" target="_blank" rel="noopener noreferrer">
+        <h2 class="project-title">{{ project.title }}</h2>
+        <p class="project-content">{{ project.content }}</p>
+        <span class="project-link-hint">View project →</span>
+      </a>
+    }
+  </div>
+
 </div>
