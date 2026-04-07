@@ -1,11 +1,9 @@
 .container-about {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 40px 20px;
-  max-width: 1200px;
-  margin: 0 auto;
+  padding: 48px 64px;
+  background-color: #000;
+  color: #fff;
 }
 
 /* About Row */
@@ -60,7 +58,17 @@
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+  .container-about {
+    padding: 40px 32px;
+  }
+}
+
 @media (max-width: 768px) {
+  .container-about {
+    padding: 32px 20px;
+  }
+
   .row-content {
     flex-direction: column;
     gap: 30px;
