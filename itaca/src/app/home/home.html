@@ -226,16 +226,17 @@
             Join the community
           </button>
         </div>
-        <p class="form-note">
-          By subscribing you agree to receive occasional updates from Itaca Lab.
-        </p>
+        @if (feedback()) {
+          <p class="form-feedback" [class.form-feedback-error]="!feedback()!.success">
+            {{ feedback()!.message }}
+          </p>
+        } @else {
+          <p class="form-note">
+            By subscribing you agree to receive occasional updates from Itaca Lab.
+          </p>
+        }
       </form>
     </div>
   </section>
 </div>
 
-@if (toast) {
-  <div class="toast" [class.toast-success]="toast.success" [class.toast-error]="!toast.success">
-    {{ toast.message }}
-  </div>
-}
