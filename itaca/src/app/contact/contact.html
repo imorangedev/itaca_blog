@@ -29,15 +29,16 @@
             Send message
           </button>
         </div>
-        <p class="form-note">By submitting you agree to receive occasional updates from Itaca Lab.</p>
+        @if (feedback()) {
+          <p class="form-feedback" [class.form-feedback-error]="!feedback()!.success">
+            {{ feedback()!.message }}
+          </p>
+        } @else {
+          <p class="form-note">By submitting you agree to receive occasional updates from Itaca Lab.</p>
+        }
       </div>
     </form>
   </section>
 
 </div>
 
-@if (toast) {
-  <div class="toast" [class.toast-success]="toast.success" [class.toast-error]="!toast.success">
-    {{ toast.message }}
-  </div>
-}
