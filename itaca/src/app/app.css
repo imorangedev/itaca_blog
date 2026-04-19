@@ -34,6 +34,7 @@ img {
 
 h1 {
   color: white;
+  margin: 0;
 }
 
 /* NAVBAR */
@@ -152,13 +153,6 @@ h1 {
 
 /* MOBILE RESPONSIVENESS */
 @media (max-width: 1024px) {
-  :host {
-    padding-top: 300px;
-    /* header (60px) + navbar (40px) */
-    padding-bottom: 0;
-    /* footer is no longer fixed */
-  }
-
   /* Compact Header */
   #container-header {
     height: 110px;
@@ -175,10 +169,10 @@ h1 {
   }
 
   #container-navbar {
-    top: 110px;
     height: 50px;
     justify-content: left;
     padding: 0 20px;
+    position: relative;
   }
 
   .burger-menu {
@@ -189,18 +183,18 @@ h1 {
   .nav-links {
     display: none;
     position: absolute;
-    top: 110px;
+    top: 100%;
     left: 0;
     width: 100%;
     flex-direction: column;
     background-color: black;
     padding: 20px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 100;
   }
 
   .nav-links.open {
     display: flex;
-    top: 55px;
     height: 250px;
   }
 
