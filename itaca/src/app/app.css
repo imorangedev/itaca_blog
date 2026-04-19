@@ -195,7 +195,7 @@ h1 {
 
   .nav-links.open {
     display: flex;
-    height: 250px;
+    height: auto;
   }
 
   .nav-links li {
