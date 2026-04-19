@@ -35,3 +35,9 @@
   </section>
 
 </div>
+
+@if (toast) {
+  <div class="toast" [class.toast-success]="toast.success" [class.toast-error]="!toast.success">
+    {{ toast.message }}
+  </div>
+}
