@@ -35,6 +35,18 @@
             "title": "Concepts and Fundamentals of Quality Attributes",
             "content": "How to measure what we are doing?",
             "url": "https://substack.com/home/post/p-192798340"
+        },
+        {
+            "post_id": 7,
+            "title": "How to Prioritize Quality Attributes in Software Architecture?",
+            "content": "Great, there are things we need to do but, Which one should come first?",
+            "url": "https://substack.com/home/post/p-194468810"
+        },
+        {
+            "post_id": 8,
+            "title": "Architecture, Design, and Diagrams",
+            "content": "How to communicate and understand with the different teams and stakeholders involved in a project?",
+            "url": "https://substack.com/home/post/p-195932347"
         }
     ]
 }
