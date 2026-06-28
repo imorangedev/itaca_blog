@@ -28,6 +28,7 @@ const angularApp = new AngularNodeAppEngine();
  * Serve static files from /browser
  */
 app.use(
+  '/itaca_blog',
   express.static(browserDistFolder, {
     maxAge: '1y',
     index: false,
